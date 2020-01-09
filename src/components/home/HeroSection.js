@@ -22,29 +22,33 @@ const HeroBackgroundImage = styled(BackgroundImage)`
 `;
 
 const HerosContainer = styled.div`
+  position: relative;
   display: flex;
 
   @media (max-width: ${props => props.theme.screenSize.mobileL}) {
-    flex-direction: column;
   }
 `;
 
 const HeroCatchyDiv = styled.div`
-  display: flex;
   flex-direction: column;
   & > * {
     margin: 1rem 0;
   }
   align-items: flex-start;
   @media (max-width: ${props => props.theme.screenSize.mobileL}) {
-    display: none;
+    position: absolute;
+    width: 100%;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 `;
 
 export const HeroSection = () => {
   const data = useStaticQuery(graphql`
     {
-      picture1: file(relativePath: { eq: "woman.jpg" }) {
+      picture1: file(relativePath: { eq: "hero.jpg" }) {
         childImageSharp {
           fluid(quality: 90, maxWidth: 1000) {
             ...GatsbyImageSharpFluid_tracedSVG

@@ -150,8 +150,8 @@ const NavFashion5 = () => {
         <Logo>
           <LogoLink to="/">
             <i>
-              <LogoSpan2>Fashion</LogoSpan2>
-              <LogoSpan>Five</LogoSpan>
+              <LogoSpan2>MO</LogoSpan2> {` `}
+              <LogoSpan>SITE</LogoSpan>
             </i>
           </LogoLink>
         </Logo>
@@ -181,9 +181,9 @@ const NavFashion5 = () => {
             </Container1200>
           </MyMenu2>
         </NavContainer>
-        <SearchContainerComputer>
+        {/* <SearchContainerComputer>
           <Search />
-        </SearchContainerComputer>
+        </SearchContainerComputer> */}
 
         <Cart className="snipcart-checkout"></Cart>
 
@@ -213,9 +213,9 @@ const NavFashion5 = () => {
           </>
         ) : null}
       </Header>
-      <SearchContainerMobile>
+      {/* <SearchContainerMobile>
         <Search />
-      </SearchContainerMobile>
+      </SearchContainerMobile> */}
     </>
   );
 };

@@ -16,11 +16,11 @@ import Footer from './Footer';
 
 const theme = {
   colors: {
-    primary: 'rgb(92, 52, 145)',
-    primaryDark: 'rgb(63, 3, 122)',
-    primaryLight: 'rgb(148, 103, 206)',
-    primaryVeryLight: 'rgb(232, 213, 250)',
-    primaryTransparent: 'rgba(92, 52, 145,0.2)',
+    primary: 'rgb(22, 158, 242)',
+    primaryDark: 'rgb(7, 92, 145)',
+    primaryLight: 'rgb(76, 173, 234)',
+    primaryVeryLight: 'rgb(197, 224, 241)',
+    primaryTransparent: 'rgba(6, 136, 217,0.2)',
     secondary: 'rgb(24, 163, 201)',
     lightgrey: 'rgb(240,240,240)',
     lightgrey2: 'rgb(224, 217, 217)',
@@ -97,7 +97,7 @@ const FullFooterLayout = styled.footer`
   grid-column: full-start/full-end;
 `;
 
-const Layout = ({ children, full }) => {
+const Layout5 = ({ children, full }) => {
   useEffect(() => {
     store.dispatch(loadUser());
   }, []);
@@ -155,11 +155,11 @@ const Layout = ({ children, full }) => {
     </Provider>
   );
 };
-Layout.propTypes = {
+Layout5.propTypes = {
   full: PropTypes.bool,
 };
-Layout.defaultProps = {
+Layout5.defaultProps = {
   full: true,
 };
 
-export default Layout;
+export default Layout5;
